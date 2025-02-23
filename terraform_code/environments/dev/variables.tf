@@ -25,3 +25,19 @@ variable "ecomplus_acr_mod" {
 variable "ecomplus_aks_mod" {
   type = map(any)
 }
+
+variable "ecomplus_sqlserver_mod" {
+  type = map(any)
+}
+
+variable "ecomplus_sqldb_mod" {
+  type = map(any)
+}
+
+variable "ecomplus_sqldbfirewall_mod" {
+  type = map(any)
+}
+
+variable "ecomplus_keyvault_mod" {
+  type = map(any)
+}

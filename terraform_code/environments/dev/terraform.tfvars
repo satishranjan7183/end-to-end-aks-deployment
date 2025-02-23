@@ -53,3 +53,44 @@ ecomplus_aks_mod = {
   virtual_network_name = "dev"
   }
 }
+
+ecomplus_sqlserver_mod = {
+  sqlserver1 = {
+  sqlservername                = "dev"
+  resource_group_name          = "dev"
+  location                     = "East US"
+  version                      = "12.0"
+  administrator_login          = "sqladminuser"
+  administrator_login_password = "Test@123456789"
+}
+}
+
+ecomplus_sqldb_mod = {
+  sqldb1 = {
+  sqldbname                = "dev"
+  sqlservername = "dev"
+  resource_group_name          = "dev"
+  location                     = "East US"
+  version                      = "12.0"
+  administrator_login          = "sqladminuser"
+  administrator_login_password = "Test@123456789"
+}
+}
+
+ecomplus_sqldbfirewall_mod = {
+  sqldbfirewall = {
+  sqldbfirewallname            = "AllowAllAzureIPs"
+  resource_group_name          = "dev"
+  sqlservername                = "dev"
+  resource_group_name          = "dev"
+}
+}
+
+
+ecomplus_keyvault_mod = {
+  keyvault = {
+  keyvaultname            = "dev"
+  location = "East US"
+  resource_group_name          = "dev"
+}
+}
